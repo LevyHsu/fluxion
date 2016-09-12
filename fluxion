@@ -1006,6 +1006,7 @@ function spain {
 }
 
 function chinese {
+	header_setinterface="请选择﻿网卡"
 	setinterface_error="没有检测到网卡 退出..."
 
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1016,15 +1017,18 @@ function chinese {
 	scanchan_option_1="单一信道"
 	scanchan_option_2="多个信道"
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_scan="WIFI 监视器(按Ctrl+C退出)"
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	header_scanchan="正在扫描目标"
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	header_askAP="选择攻击选项"
 	askAP_option_1="伪装AP - Hostapd ("$red"推荐)"
+	askAP_option_2="伪装AP - airbase-ng (﻿速度稍慢)"
 	askAP_option_3="WPS-SLAUGHTER - 暴力破解 WPS Pin"
 	askAP_option_4="暴力破解 - (需要握手包)"
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	header_askauth="请选择验证密码方式"
+	askauth_option_1="已有握手包 ("$red"推荐)"
 	askauth_option_2="提供的wpa (易错)"
 	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	header_deauthforce="握手包检查"
@@ -1040,6 +1044,8 @@ function chinese {
 	general_error_1="未找到"
 	general_case_error="未知选项. 请再次选择"
 	general_exitmode="清理并退出"
+	general_exitmode_1="关闭监控"
+	general_exitmode_2="关闭网卡"
 	general_exitmode_3="关闭 "$grey"forwarding of packets"
 	general_exitmode_4="清理 "$grey"iptables"
 	general_exitmode_5="恢复 "$grey"tput"
